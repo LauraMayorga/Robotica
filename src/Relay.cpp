@@ -14,15 +14,17 @@ void Relay::init()
 
 void Relay::activar()
 {
-    if (this->encendido){
-        digitalWrite(sensor,LOW);  
-        this->encendido = false;
-    }else{
-        digitalWrite(sensor,HIGH);  
-        this->encendido = true;
-    }
-
     
+    
+    digitalWrite(sensor,HIGH);  
+    this->encendido = true;
+    
+}
+
+void Relay::desactivar(){
+
+    digitalWrite(sensor,LOW);  
+    this->encendido = false;
 }
 
 bool Relay::estado()

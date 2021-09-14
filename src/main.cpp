@@ -48,6 +48,33 @@ void loop()
   Serial.println(" Aspiradora Y: "+aspiradora.readY());
   Serial.println(" Aspiradora boton: "+aspiradora.readButton());
 
-  
-
+  if (sensorEntrada.read() == 0){
+    Serial.println(" Hay alguien o algo en la entrada");
+  }
+  if (sensorPatio.read() == 0){
+    Serial.println(" Hay alguien o algo en la puerta del patio");
+  }
+  if (aireAcondicionado.read() > 40){
+    Serial.println("Alerta la temperatura es muy alta");
+  }else if(aireAcondicionado.read() < 5){
+    Serial.println("Alerta la temperatura es muy baja");
+  }
+  if (sensorLuzHabitacion.read()==1){
+    luzHabitacion.activar();
+  }else{
+    luzHabitacion.desactivar();
+  }
+  if (sensorLuzCocina.read()==1){
+    luzCocina.activar();
+  }else{
+    luzCocina.desactivar();
+  }
+  if (sensorLuzSala.read()==1){
+    luzSala.activar();
+  }else{
+    luzSala.desactivar();
+  }
+  if ( aspiradora.readButton()){
+    Serial.println("La aspiradora esta encendida");
+  }
 }
