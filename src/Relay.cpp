@@ -14,7 +14,7 @@ void Relay::init()
 
 void Relay::activar()
 {
-    if this->encendido{
+    if (this->encendido){
         digitalWrite(sensor,LOW);  
         this->encendido = false;
     }else{
@@ -27,5 +27,5 @@ void Relay::activar()
 
 bool Relay::estado()
 {
-    return this->encendido
+    return this->encendido;
 }

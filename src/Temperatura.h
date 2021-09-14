@@ -5,13 +5,12 @@
 class Temperatura
 {
     private:
-        String sensorPinAnalog;
         byte sensorPinDigital;
+        byte sensorPinAnalog;
         boolean presencia;
     public: 
-        Temperatura(byte sensorPinDigital,byte sensorPinAnalog);
+        Temperatura(byte sensorPinDigital);
         void init();
         int read();
-        void setPinesConexion(byte eleccion, String pinModificar);
 };
 #endif

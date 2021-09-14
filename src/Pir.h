@@ -4,10 +4,10 @@
 class Pir
 {
     private:
-    byte sensor;
-    boolean presencia;
+        byte sensor;
+        boolean presencia;
     public: 
-        Obstaculo(byte sensor);
+        Pir(byte sensor);
         void init();
         int read();
 };

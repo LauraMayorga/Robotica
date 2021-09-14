@@ -1,17 +1,17 @@
 #include <Arduino.h>
-#include <Temperatura.h>
+#include <JoyStick.h>
 
-JoyStick::JoyStick(String pinJoyX, String pinJoyY, byte pinJoyButton)
+JoyStick::JoyStick(byte pinJoyButton)
 {
-    this->pinJoyX = pinJoyX;
-    this->pinJoY = pinJoyY;
+    this->pinJoyX = A1;
+    this->pinJoyY = A2;
     this->pinJoyButton = pinJoyButton;
 }
 
 void JoyStick::init()
 {
-    pinMode(pinJoyX, INPUT);
-    pinMode(pinJoyY, INPUT);
+    pinMode(A1, INPUT);
+    pinMode(A2, INPUT);
     pinMode(pinJoyButton,INPUT_PULLUP);
 }
 
@@ -32,7 +32,6 @@ int JoyStick::readY()
 bool JoyStick::readButton()
 {
     bool buttonValue = digitalRead(pinJoyButton);
-    delay(100);                 //es necesaria una pequeña pausa entre lecturas analógicas
     return buttonValue;
 }
 

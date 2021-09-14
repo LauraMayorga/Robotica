@@ -7,14 +7,14 @@
 
 Obstaculo sensorEntrada(1);
 Obstaculo sensorPatio(2);
-Temperatura aireAcondicionado(3, A0);
-Relay luzHabitación(4);
+Temperatura aireAcondicionado(3);
+Relay luzHabitacion(4);
 Relay luzCocina(5);
 Relay luzSala(6);
 Pir sensorLuzHabitacion(7);
 Pir sensorLuzCocina(8);
 Pir sensorLuzSala(9);
-JoyStick aspiradora(A1,A2, 10)
+JoyStick aspiradora(10);
 
 void setup()
 {

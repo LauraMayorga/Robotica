@@ -8,9 +8,9 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/donke/OneDrive/Documents/PlatformIO/Projects/KY028/include",
-                "C:/Users/donke/OneDrive/Documents/PlatformIO/Projects/KY028/src",
-                "C:/Users/donke/OneDrive/Documents/PlatformIO/Projects/KY028/.pio/libdeps/nanoatmega168/Blynk/src",
+                "C:/Users/donke/Downloads/LAURA/Robotica/include",
+                "C:/Users/donke/Downloads/LAURA/Robotica/src",
+                "C:/Users/donke/Downloads/LAURA/Robotica/.pio/libdeps/nanoatmega168/Blynk/src",
                 "C:/Users/donke/.platformio/packages/framework-arduino-avr/cores/arduino",
                 "C:/Users/donke/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
                 "C:/Users/donke/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
@@ -23,9 +23,9 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/donke/OneDrive/Documents/PlatformIO/Projects/KY028/include",
-                    "C:/Users/donke/OneDrive/Documents/PlatformIO/Projects/KY028/src",
-                    "C:/Users/donke/OneDrive/Documents/PlatformIO/Projects/KY028/.pio/libdeps/nanoatmega168/Blynk/src",
+                    "C:/Users/donke/Downloads/LAURA/Robotica/include",
+                    "C:/Users/donke/Downloads/LAURA/Robotica/src",
+                    "C:/Users/donke/Downloads/LAURA/Robotica/.pio/libdeps/nanoatmega168/Blynk/src",
                     "C:/Users/donke/.platformio/packages/framework-arduino-avr/cores/arduino",
                     "C:/Users/donke/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
                     "C:/Users/donke/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",

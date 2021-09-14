@@ -4,11 +4,11 @@
 class JoyStick
 {
     private:
-        String pinJoyX;
-        String pinJoyY;
+        byte pinJoyX;
+        byte pinJoyY;
         byte pinJoyButton;
     public: 
-        JoyStick(byte sensorPinDigital,byte sensorPinAnalog);
+        JoyStick(byte sensorPinDigital);
         void init();
         int readX();
         int readY();

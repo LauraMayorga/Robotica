@@ -10,6 +10,6 @@ class Relay
         Relay(byte sensor);
         void init();
         void activar();
-        void estado();
+        bool estado();
 };
 #endif

@@ -1,33 +1,23 @@
 #include <Arduino.h>
 #include <Temperatura.h>
 
-Temperatura::Temperatura(byte sensorPinDigital, String sensorPinAnalog)
+Temperatura::Temperatura(byte sensorPinDigital)
 {
     this->sensorPinDigital = sensorPinDigital;
-    this->sensorPinAnalog = sensorPinAnalog;
+    this->sensorPinAnalog = A0;
 }
 
 void Temperatura::init()
 {
     pinMode(sensorPinDigital, INPUT);
-    pinMode(sensorPinAnalog, OUTPUT);
+    pinMode(A0, OUTPUT);
 }
 
 int Temperatura::read()
 {
     int digitalVal = digitalRead(sensorPinDigital); 
     // Read the analog interface
-    int analogVal = analogRead(sensorPinAnalog); 
+    int analogVal = analogRead(A0); 
     Serial.println(analogVal); // print analog value to serial
     return digitalVal;
-}
-
-
-void Temperatura::setPinesConexion(byte eleccion, String pinModificar)
-{
-    if(eleccion == 1 ){
-        this->sensorPinDigital = pinModificar;
-    }else{
-        this->sensorPinAnalog = pinModificar;
-    }
 }
