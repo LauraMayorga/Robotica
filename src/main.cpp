@@ -44,7 +44,9 @@ void loop()
   Serial.println("Sensor Luz Habitación: " + sensorLuzHabitacion.read());
   Serial.println("Sensor Luz Cocina: " + sensorLuzCocina.read());
   Serial.println("Sensor Luz Sala: " + sensorLuzSala.read());
-  Serial.println("Aspiradora X: " + aspiradora.readX()+" Aspiradora Y: "+aspiradora.readY()+" Aspiradora boton: "+aspiradora.readButton());
+  Serial.println("Aspiradora X: " + aspiradora.readX());
+  Serial.println(" Aspiradora Y: "+aspiradora.readY());
+  Serial.println(" Aspiradora boton: "+aspiradora.readButton());
 
   
 
